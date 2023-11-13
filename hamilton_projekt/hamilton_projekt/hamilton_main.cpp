@@ -19,35 +19,46 @@ int main(int argc, char** argv)
 	if (argc < 7)
 	{
 		std::cout << "Zbyt mala liczba parametrow. Wymaganych parametrow 6." << std::endl;
-		std::cout << "Uruchom program bez parametrow aby zobczayc instrukcje.";
+		std::cout << "Uruchom program bez parametrow aby zobczayc instrukcje." << std::endl;
 		return 1;
 	}
 
 	for (int i = 0; i < argc; i++)
 	{
+		bool _i = 0, _o = 0, _s = 0;
 		if (argv[i] == std::string("-i"))
 		{
 			input_file_name = argv[i + 1];
 			i++;
+			_i = 1;
 		}
 		else if (argv[i] == std::string("-o"))
 		{
 			output_file_name = argv[i + 1];
 			i++;
+			_o = 1;
 		}
 		else if (argv[i] == std::string("-s"))
 		{
 			starting_vertex = stoi(std::string(argv[i + 1]));
 			i++;
+			_s = 1;
 		}
+		//if (!(_i and _o and _s))
+		//{
+		//	std::cout << "Brak paratemtru" << std::endl;
+		//	std::cout << "Uruchom program bez parametrow aby zobczayc instrukcje." << std::endl;
+		//	return 1;
+		//}
 	}
+	
+	//todo check if starting point is a number
 
-		
-	//check if starting point is a number
 
-	//check   
-	//std::cout << input_file_name << std::endl;
-	//std::cout << output_file_name << std::endl;
-	//std::cout << starting_vertex << std::endl;
+
+	//check values  
+	std::cout << input_file_name << std::endl;
+	std::cout << output_file_name << std::endl;
+	std::cout << starting_vertex << std::endl;
 	return 0;
 }
