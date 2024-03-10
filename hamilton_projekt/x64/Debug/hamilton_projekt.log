@@ -1,0 +1,7 @@
+﻿  hamilton_algotihm.cpp
+C:\Users\Jarek Makówka\Source\Repos\f5abc478-gr22-repo\projekt\hamilton_projekt\hamilton_projekt\hamilton_algotihm.cpp(35,43): warning C4267: "inicjowanie": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\Jarek Makówka\Source\Repos\f5abc478-gr22-repo\projekt\hamilton_projekt\hamilton_projekt\hamilton_algotihm.cpp(35,43): warning C4267: "inicjowanie": konwersja z "size_t" do "const int", możliwa utrata danych
+  input_output.cpp
+  Generowanie kodu...
+C:\Users\Jarek Makówka\Source\Repos\f5abc478-gr22-repo\projekt\hamilton_projekt\hamilton_projekt\input_output.cpp(133): warning C4715: "output_the_path”: niewszystkie ścieżki kodu zwracają wartość
+  hamilton_projekt.vcxproj -> C:\Users\Jarek Makówka\Source\Repos\f5abc478-gr22-repo\projekt\hamilton_projekt\x64\Debug\hamilton_projekt.exe
